@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"",
-  "%Name":"tile_walls",
+  "%Name":"tile_floors",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tile_walls",
-  "out_columns":4,
+  "name":"tile_floors",
+  "out_columns":3,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_walls",
-    "path":"sprites/spr_walls/spr_walls.yy",
+    "name":"spr_floors",
+    "path":"sprites/spr_floors/spr_floors.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -27,7 +27,7 @@
     "path":"texturegroups/Default",
   },
   "tileAnimation":{
-    "FrameData":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,],
+    "FrameData":[0,1,2,3,4,5,6,7,],
     "SerialiseFrameCount":1,
   },
   "tileAnimationFrames":[],
@@ -38,5 +38,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":16,
+  "tile_count":8,
 }
