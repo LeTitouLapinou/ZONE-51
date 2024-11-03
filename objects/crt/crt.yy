@@ -53,7 +53,7 @@
     {"$GMObjectProperty":"v1","%Name":"do_overlay","filters":[],"listItems":[],"multiselect":false,"name":"do_overlay","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"overlay_image","filters":[
         "GMSprite",
-      ],"listItems":[],"multiselect":false,"name":"overlay_image","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"overlay_example","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"overlay_image","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"overlay_example","path":"sprites/overlay_example/overlay_example.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"overlay_example","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"deconvergence","filters":[],"listItems":[],"multiselect":false,"name":"deconvergence","rangeEnabled":true,"rangeMax":1.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"halation","filters":[],"listItems":[],"multiselect":false,"name":"halation","rangeEnabled":true,"rangeMax":1.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"glow_amount","filters":[],"listItems":[],"multiselect":false,"name":"glow_amount","rangeEnabled":true,"rangeMax":1.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.4","varType":0,},

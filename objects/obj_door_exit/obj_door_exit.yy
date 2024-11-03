@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_backgroundFilter",
+  "%Name":"obj_door_exit",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_backgroundFilter",
+  "name":"obj_door_exit",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_door_exit",
+    "path":"sprites/spr_door_exit/spr_door_exit.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
