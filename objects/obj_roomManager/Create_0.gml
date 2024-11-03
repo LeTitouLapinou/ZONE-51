@@ -3,11 +3,18 @@
 
 randomize() //randomisation de seed
 
+nb_rooms_seen = 0;
+
+
 roomWestEntrance = [rm_W_E_01, rm_W_E_02, rm_W_S_01];
 roomEastEntrance = [];
 roomNorthEntrance = [rm_N_S_01];
 roomSouthEntrance = [];
 
+endWestEntrance = [rm_W_Exit];
+endEastEntrance = [rm_E_Exit];
+endNorthEntrance = [rm_N_Exit];
+endSouthEntrance = [rm_S_Exit];
 
 
 
@@ -25,6 +32,7 @@ fct_ChangeRoom = function()
 	var targetRoom = nextRoomArray[randomIndex] //Aller chercher la room a l'index defini avant
 	
 	room_goto(targetRoom)
+	nb_rooms_seen += 1;
 	
 	array_delete(nextRoomArray, randomIndex, 1); //Supprimer la prochaine room du pool de rooms disponibles
 		
@@ -36,19 +44,27 @@ fct_RoomSelection = function()
 	switch (string_char_at(room_get_name(room), 6)) //Choisir la prochaine room en fonction de l'emplacement de la sortie de la room actuelle
 	{
 		case "E":
-	        return roomWestEntrance;
+	        if (array_length(roomWestEntrance)=0) || (nb_rooms_seen == max_rooms)
+				return endWestEntrance;
+			else return roomWestEntrance;
 	    break;
 
 	    case "W":
-	        return roomEastEntrance;
+	        if (array_length(roomEastEntrance)=0) || (nb_rooms_seen == max_rooms)
+				return endEastEntrance;
+			else return roomEastEntrance;
 	    break;
 
 	    case "S":
-	        return roomNorthEntrance;
+	        if (array_length(roomNorthEntrance)=0) || (nb_rooms_seen == max_rooms)
+				return endNorthEntrance;
+			else return roomNorthEntrance;
 	    break;
 		
 	    case "N":
-	        return roomSouthEntrance;
+	        if (array_length(roomSouthEntrance)=0) || (nb_rooms_seen == max_rooms)
+				return endSouthEntrance;
+			else return roomSouthEntrance;
 	    break;
 
 	    //default:
