@@ -70,8 +70,8 @@
   ],
   "name":"rm_N_Exit",
   "parent":{
-    "name":"Pièces",
-    "path":"folders/Pièces.yy",
+    "name":"North_Entrance",
+    "path":"folders/Pièces/North_Entrance.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -7,10 +7,10 @@ targetRoom = room
 
 fct_Move = function()
 {
-	var left  = keyboard_check(vk_left);
-	var right = keyboard_check(vk_right);
-	var up    = keyboard_check(vk_up);
-	var down  = keyboard_check(vk_down);
+	var left  = keyboard_check(ord("A"));
+	var right = keyboard_check(ord("D"));
+	var up    = keyboard_check(ord("W"));
+	var down  = keyboard_check(ord("S"));
 
 
 	// On recupere les ID des tiles

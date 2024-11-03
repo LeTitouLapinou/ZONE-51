@@ -43,8 +43,8 @@
   ],
   "name":"rm_W_E_01",
   "parent":{
-    "name":"Pièces",
-    "path":"folders/Pièces.yy",
+    "name":"West_Entrance",
+    "path":"folders/Pièces/West_Entrance.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

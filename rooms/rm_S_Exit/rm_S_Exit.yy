@@ -71,8 +71,8 @@
   ],
   "name":"rm_S_Exit",
   "parent":{
-    "name":"Pièces",
-    "path":"folders/Pièces.yy",
+    "name":"South_Entrance",
+    "path":"folders/Pièces/South_Entrance.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

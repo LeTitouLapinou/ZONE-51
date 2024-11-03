@@ -36,6 +36,7 @@ fct_ChangeRoom = function()
 	
 	array_delete(nextRoomArray, randomIndex, 1); //Supprimer la prochaine room du pool de rooms disponibles
 		
+	room_instance_add(targetRoom, 0, 0, obj_backgroundFilter);
 }
 
 
