@@ -18,7 +18,6 @@ fct_Move = function()
 	var map_id = layer_tilemap_get_id(lay_id);
 
 
-
 	// Collision check
 	if (left == 1)
 	{ 

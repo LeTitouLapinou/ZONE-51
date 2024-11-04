@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_alien",
+  "%Name":"obj_camera",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_door_exit","path":"objects/obj_door_exit/obj_door_exit.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_alien",
+  "name":"obj_camera",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -31,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_alien",
-    "path":"sprites/spr_alien/spr_alien.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

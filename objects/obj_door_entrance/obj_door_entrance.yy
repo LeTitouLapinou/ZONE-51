@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_alien",
+  "%Name":"obj_door_entrance",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_door_exit","path":"objects/obj_door_exit/obj_door_exit.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_alien",
+  "name":"obj_door_entrance",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_alien",
-    "path":"sprites/spr_alien/spr_alien.yy",
+    "name":"spr_door_entrance",
+    "path":"sprites/spr_door_entrance/spr_door_entrance.yy",
   },
   "spriteMaskId":null,
   "visible":true,
