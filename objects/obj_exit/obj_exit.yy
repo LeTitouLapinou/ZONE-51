@@ -6,8 +6,8 @@
   "name":"obj_exit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"Niveaux",
+    "path":"folders/Objets/Niveaux.yy",
   },
   "parentObjectId":null,
   "persistent":false,
