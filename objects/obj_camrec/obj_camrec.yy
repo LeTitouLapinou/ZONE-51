@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_backgroundFilter",
+  "%Name":"obj_camrec",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_campose2","path":"objects/obj_campose2/obj_campose2.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_campose1","path":"objects/obj_campose1/obj_campose1.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_backgroundFilter",
+  "name":"obj_camrec",
   "overriddenProperties":[],
   "parent":{
-    "name":"Niveaux",
-    "path":"folders/Objets/Niveaux.yy",
+    "name":"Obstacle",
+    "path":"folders/Objets/Obstacle.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_cam",
+    "path":"sprites/spr_cam/spr_cam.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

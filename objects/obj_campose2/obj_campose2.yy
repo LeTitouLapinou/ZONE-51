@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_backgroundFilter",
+  "%Name":"obj_campose2",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_camrec","path":"objects/obj_camrec/obj_camrec.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_backgroundFilter",
+  "name":"obj_campose2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Niveaux",
-    "path":"folders/Objets/Niveaux.yy",
+    "name":"Obstacle",
+    "path":"folders/Objets/Obstacle.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_campose",
+    "path":"sprites/spr_campose/spr_campose.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

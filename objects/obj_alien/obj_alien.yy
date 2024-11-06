@@ -11,8 +11,8 @@
   "name":"obj_alien",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"Joueur",
+    "path":"folders/Objets/Joueur.yy",
   },
   "parentObjectId":null,
   "persistent":false,

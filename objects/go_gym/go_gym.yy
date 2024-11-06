@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_backgroundFilter",
+  "%Name":"go_gym",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_backgroundFilter",
+  "name":"go_gym",
   "overriddenProperties":[],
   "parent":{
-    "name":"Niveaux",
-    "path":"folders/Objets/Niveaux.yy",
+    "name":"Obstacle",
+    "path":"folders/Objets/Obstacle.yy",
   },
   "parentObjectId":null,
   "persistent":false,
