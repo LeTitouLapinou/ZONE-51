@@ -11,7 +11,9 @@ image_angleV = 0;
 image_speed = 0;
 moveSpeed = 4;
 targetRoom = room;
-
+dash = false;
+dashDuration = 10;
+invisible = false;
 
 /*
 fct_Move = function()
@@ -143,6 +145,7 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 		//if(iDirection==1){droite=true}else{if(iDirection==-1){gauche=true}}
 		
 }
+
 
 fct_Angle = function()
 {

@@ -3,6 +3,16 @@
 
 var reset = keyboard_check(vk_space);
 
+if(keyboard_check(vk_numpad1))
+{
+	image_index = 0;
+	
+}
+if(keyboard_check_released(vk_numpad1))
+{
+	motion_add(image_angle,10)
+	alarm_set(0,10)
+}
 if(keyboard_check(vk_left))
 {
 	image_angleH = 180
@@ -34,8 +44,18 @@ if(!keyboard_check(vk_anykey) && (gamepad_axis_value(0,gp_axislh)==0))
 {
 	image_index = 1;
 	image_speed = 0;
+	invisible = true;
 }
-
+else {invisible = false}
+if(invisible == true)
+{
+	image_alpha -= 0.01
+	if(image_alpha <= 0.3){image_alpha=0.3}
+}
+else
+{
+	image_alpha = 1
+}
 
 if (keyboard_check_released(vk_right) && init_slowdown == false) {
     init_slowdown = true;
