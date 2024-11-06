@@ -95,6 +95,7 @@
     {"id":{"name":"overlay_example","path":"sprites/overlay_example/overlay_example.yy",},},
     {"id":{"name":"rgb_noise","path":"sprites/rgb_noise/rgb_noise.yy",},},
     {"id":{"name":"spr_alien","path":"sprites/spr_alien/spr_alien.yy",},},
+    {"id":{"name":"spr_alienV","path":"sprites/spr_alienV/spr_alienV.yy",},},
     {"id":{"name":"spr_BG","path":"sprites/spr_BG/spr_BG.yy",},},
     {"id":{"name":"spr_cam","path":"sprites/spr_cam/spr_cam.yy",},},
     {"id":{"name":"spr_campose","path":"sprites/spr_campose/spr_campose.yy",},},
