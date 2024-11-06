@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_camrecB",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_camrecB",
+  "parent":{
+    "name":"scr_obstacle",
+    "path":"folders/Scripts/scr_obstacle.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
