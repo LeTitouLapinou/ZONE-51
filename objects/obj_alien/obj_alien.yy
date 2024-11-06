@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_alien",
-    "path":"sprites/spr_alien/spr_alien.yy",
+    "name":"spr_alienV",
+    "path":"sprites/spr_alienV/spr_alienV.yy",
   },
   "spriteMaskId":null,
   "visible":true,
