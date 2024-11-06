@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_alien",
+  "%Name":"obj_campose1",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_door_exit","path":"objects/obj_door_exit/obj_door_exit.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_alien",
+  "name":"obj_campose1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Joueur",
-    "path":"folders/Objets/Joueur.yy",
+    "name":"Obstacle",
+    "path":"folders/Objets/Obstacle.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_alienV",
-    "path":"sprites/spr_alienV/spr_alienV.yy",
+    "name":"spr_campose",
+    "path":"sprites/spr_campose/spr_campose.yy",
   },
   "spriteMaskId":null,
   "visible":true,
