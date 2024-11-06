@@ -5,6 +5,7 @@ moveSpeed = 4;
 targetRoom = room
 
 
+
 fct_Move = function()
 {
 	var left  = keyboard_check(ord("A"));
