@@ -7,7 +7,14 @@ x_start = x
 y_start = y
 
 b_aller = true
+default_sprite_index = 0
 
+if b_bleu
+	default_sprite_index = 2
+
+
+image_index = default_sprite_index
+image_speed = 0
 
 fct_Destination = function()
 {

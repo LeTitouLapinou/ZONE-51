@@ -5,4 +5,4 @@
 
 
 fct_Destination()
-move_towards_point(destination_x, destination_y, 1)
+move_towards_point(destination_x, destination_y, var_speed)

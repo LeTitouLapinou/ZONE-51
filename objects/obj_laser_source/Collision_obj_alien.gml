@@ -1,7 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if !obj_alien.invisible
+
+if !b_bleu
 {
-	obj_alien.fct_Damage();
+	if !obj_alien.invisible
+	{
+		obj_alien.fct_Damage();
+	}
+}
+
+else
+{
+	if obj_alien.invisible
+		{
+			obj_alien.fct_Damage();
+		}
 }
