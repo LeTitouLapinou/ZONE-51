@@ -5,7 +5,7 @@
   "managed":true,
   "name":"preset_pvm",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"crt","path":"objects/crt/crt.yy",},"propertyId":{"name":"phosphor_mask","path":"objects/crt/crt.yy",},"resource":{"name":"mask_shadow","path":"sprites/mask_shadow/mask_shadow.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"mask_fakeaperture",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"crt","path":"objects/crt/crt.yy",},"propertyId":{"name":"phosphor_mask","path":"objects/crt/crt.yy",},"resource":{"name":"mask_fakeaperture","path":"sprites/mask_fakeaperture/mask_fakeaperture.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"mask_fakeaperture",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"crt","path":"objects/crt/crt.yy",},"propertyId":{"name":"scanline_intensity","path":"objects/crt/crt.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
   ],
   "parent":{
