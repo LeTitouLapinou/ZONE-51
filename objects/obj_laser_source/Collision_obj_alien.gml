@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-
-
-fct_Destination()
-move_towards_point(destination_x, destination_y, 1)
+if !obj_alien.invisible
+{
+	obj_alien.fct_Damage();
+}

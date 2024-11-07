@@ -165,3 +165,8 @@ fct_Angle = function()
 		image_angle = 320
 	}
 }
+
+fct_Damage = function()
+{
+	show_debug_message("DAMAGE")
+}
