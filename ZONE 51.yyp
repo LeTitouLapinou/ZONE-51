@@ -16,8 +16,8 @@
     {"$GMFolder":"","%Name":"Example & Docs","folderPath":"folders/Example & Docs.yy","name":"Example & Docs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objets","folderPath":"folders/Objets.yy","name":"Objets","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objets/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Joueur","folderPath":"folders/Objets/Joueur.yy","name":"Joueur","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objets/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Niveaux","folderPath":"folders/Objets/Niveaux.yy","name":"Niveaux","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pièces","folderPath":"folders/Pièces.yy","name":"Pièces","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -44,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"ZONE 51",
   "resources":[
@@ -89,6 +89,7 @@
     {"id":{"name":"rgb_noise","path":"sprites/rgb_noise/rgb_noise.yy",},},
     {"id":{"name":"spr_alien","path":"sprites/spr_alien/spr_alien.yy",},},
     {"id":{"name":"spr_AlienMenu","path":"sprites/spr_AlienMenu/spr_AlienMenu.yy",},},
+    {"id":{"name":"spr_alienV","path":"sprites/spr_alienV/spr_alienV.yy",},},
     {"id":{"name":"spr_BG","path":"sprites/spr_BG/spr_BG.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_door_entrance","path":"sprites/spr_door_entrance/spr_door_entrance.yy",},},

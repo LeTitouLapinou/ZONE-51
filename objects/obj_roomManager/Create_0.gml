@@ -75,4 +75,4 @@ fct_RoomSelection = function()
 }
 	
 
-audio_play_sound(snd_ambient_music,10,3,15)
+audio_play_sound(snd_ambient_music,10,3,5)
