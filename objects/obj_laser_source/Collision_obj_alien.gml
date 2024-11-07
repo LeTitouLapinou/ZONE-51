@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if !b_bleu
+if !b_bleu //si laser rouge, degat si le joueur n'est pas invisible
 {
 	if !obj_alien.invisible
 	{
@@ -10,7 +10,7 @@ if !b_bleu
 	}
 }
 
-else
+else //si laser bleu, degat si le joueur est invisible
 {
 	if obj_alien.invisible
 		{
