@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_roomManager",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_pressure_plate",
+  "eventList":[],
   "managed":true,
-  "name":"obj_roomManager",
+  "name":"obj_pressure_plate",
   "overriddenProperties":[],
   "parent":{
     "name":"Niveaux",
     "path":"folders/Objets/Niveaux.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -25,13 +23,14 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"max_rooms","filters":[],"listItems":[],"multiselect":false,"name":"max_rooms","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_pressure_plate",
+    "path":"sprites/spr_pressure_plate/spr_pressure_plate.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
