@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-deplacement = 16*deplacement
-
+deplacement = 16*deplacement // deplacement en nb de tiles
+// coordonnées de départ
 x_start = x
 y_start = y
 
-b_aller = true
-default_sprite_index = 0
+b_aller = true // est il sur l'allé?
+default_sprite_index = 0 //laser rouge
 
-if b_bleu
+if b_bleu //laser bleu
 	default_sprite_index = 2
 
 
@@ -34,7 +34,7 @@ fct_Destination = function()
 	}
 	else
 	{
-		if b_aller
+		if b_aller// meme chose mes horizontallement
 		{
 			destination_x = x_start
 			destination_y = y_start + deplacement

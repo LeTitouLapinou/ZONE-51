@@ -1,2 +1,3 @@
 /// @description Insert description here
-image_speed = 0.25;
+working = (image_speed = 0.25);
+not_working = (image_speed = 0);

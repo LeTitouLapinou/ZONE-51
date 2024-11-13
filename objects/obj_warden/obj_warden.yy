@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pit",
+  "%Name":"obj_warden",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pit",
+  "name":"obj_warden",
   "overriddenProperties":[],
   "parent":{
     "name":"Obstacle",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pit",
-    "path":"sprites/spr_pit/spr_pit.yy",
+    "name":"spr_alienV",
+    "path":"sprites/spr_alienV/spr_alienV.yy",
   },
   "spriteMaskId":null,
   "visible":true,

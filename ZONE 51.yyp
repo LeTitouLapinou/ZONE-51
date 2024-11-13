@@ -73,6 +73,7 @@
     {"id":{"name":"obj_pressure_plate","path":"objects/obj_pressure_plate/obj_pressure_plate.yy",},},
     {"id":{"name":"obj_roomManager","path":"objects/obj_roomManager/obj_roomManager.yy",},},
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},},
+    {"id":{"name":"obj_warden","path":"objects/obj_warden/obj_warden.yy",},},
     {"id":{"name":"preset_480i_interlaced","path":"objects/preset_480i_interlaced/preset_480i_interlaced.yy",},},
     {"id":{"name":"preset_arcade","path":"objects/preset_arcade/preset_arcade.yy",},},
     {"id":{"name":"preset_consumer","path":"objects/preset_consumer/preset_consumer.yy",},},
