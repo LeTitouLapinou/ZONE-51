@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_warden",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_fence",
+  "eventList":[],
   "managed":true,
-  "name":"obj_warden",
+  "name":"obj_fence",
   "overriddenProperties":[],
   "parent":{
     "name":"Obstacle",
@@ -31,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_alienV",
-    "path":"sprites/spr_alienV/spr_alienV.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
