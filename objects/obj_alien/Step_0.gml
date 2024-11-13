@@ -3,42 +3,70 @@
 
 var reset = keyboard_check(vk_space);
 
-if(keyboard_check(vk_numpad1))
+if(keyboard_check(vk_shift) && !dead)
 {
-	image_index = 0;
-	
-}
-if(keyboard_check_released(vk_numpad1))
-{
-	motion_add(image_angle,10)
-	alarm_set(0,10)
-}
-if(keyboard_check(vk_left))
-{
-	image_angleH = 180
-	fct_MoveH(-1);
-	
-}
-if(keyboard_check(vk_right))
-{
-	image_angleH = 0
-	fct_MoveH(1);
-	
+	if(keyboard_check(vk_left)||keyboard_check(vk_right)||keyboard_check(vk_down)||keyboard_check(vk_down)){}
+	else
+	{
+		image_index = 0;
+	}
+	if(instance_number(obj_dash)<=1){instance_create_layer(x,y,"Instances",obj_dash)}
 }
 
-if(keyboard_check(vk_down))
+if(keyboard_check_released(vk_shift) && !dead)
 {
-	image_angleV = 270
-	fct_MoveV(1);
+	instance_destroy(obj_dash)
+	var lay_id = layer_get_id("Tiles_Walls");
+	var map_id = layer_tilemap_get_id(lay_id);
 	
+	if(!collision_line(x,y,x+vectorX*50,y+vectorY*50,map_id,false,true))
+	{
+		motion_add(image_angle,10)
+		alarm_set(0,5)
+		//x += lengthdir_x(50, image_angle);
+		//y += lengthdir_y(50, image_angle); 
+	}
+	else{alarm_set(0,1)}
+}
+if(!dead){
+	if(keyboard_check(vk_left))
+	{
+		//image_angleH = 180
+		fct_MoveH(-1);
+		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
+		vectorY = keyboard_check(vk_down) - keyboard_check(vk_up);
+		vect2 = [vectorX, vectorY]
+	}
+
+	if(keyboard_check(vk_right))
+	{
+		//image_angleH = 0
+		fct_MoveH(1);
+		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
+		vectorY = keyboard_check(vk_down) - keyboard_check(vk_up);
+		vect2 = [vectorX, vectorY]
+	}
+
+
+	if(keyboard_check(vk_down))
+	{
+		//image_angleV = 270
+		fct_MoveV(1);
+		vectorY = keyboard_check(vk_down) - keyboard_check(vk_up);
+		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
+		vect2 = [vectorX, vectorY]
+	}
+
+	if(keyboard_check(vk_up))
+	{
+		//image_angleV = 90
+		fct_MoveV(-1);
+		vectorY = keyboard_check(vk_down) - keyboard_check(vk_up);
+		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
+		vect2 = [vectorX, vectorY]
+	}
 }
 
-if(keyboard_check(vk_up))
-{
-	image_angleV = 90
-	fct_MoveV(-1);
-	
-}
 fct_Angle();
 if(!keyboard_check(vk_anykey) && (gamepad_axis_value(0,gp_axislh)==0))
 {
@@ -70,7 +98,7 @@ if ( init_slowdown )
   
 	if (right_Top == 0 and right_Bot == 0)
 	{
-		show_debug_message("init slow Droite")
+		
 		hspeed -= fric;
 		if( hspeed <= 0 )
 		{
@@ -101,7 +129,7 @@ if ( init_slowdown2 )
 	    // Avancer si pas de collision
 	if (left_Top == 0 and left_Bot == 0) 
 	{ 
-		show_debug_message("init slow Gauche")
+		
 	    hspeed += fric;
 
 	    if ( hspeed >= 0 )
@@ -131,7 +159,7 @@ if ( init_slowdown3 )
     
 	if (up_Left == 0 and up_Right == 0)
 	{
-		show_debug_message("init slow haut")
+		
 	    vspeed += fric;
 
 	    if ( vspeed >= 0 )
@@ -160,7 +188,7 @@ if ( init_slowdown4 )
    
 	if (down_Left == 0 and down_Right == 0)
 	{
-		show_debug_message("init slow bas")
+		
 	    vspeed -= fric;
 	    if( vspeed <= 0 )
 	    {
@@ -176,8 +204,24 @@ if ( init_slowdown4 )
 	
 
 }
-//fct_Move()
-
+if(collision_rectangle(x-sprite_width*0.4,y-sprite_height*0.4,x+sprite_width*0.4,y+sprite_height*0.4,obj_spike,false,true)){
+	if ((obj_spike.image_index == 11) || (obj_spike.image_index == 12))
+	{
+		dead = true;
+	}
+}
+if(dead == true)
+{
+	image_speed = 1
+	sprite_index = spr_alien_dead
+	hspeed = 0
+	vspeed = 0
+	speed = 0
+	if(image_index == -1)
+	{
+		image_speed = 0
+	}
+}
 //Juste pour tester
 if (reset == 1)
 	game_restart()

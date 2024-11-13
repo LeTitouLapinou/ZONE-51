@@ -14,6 +14,14 @@ targetRoom = room;
 dash = false;
 dashDuration = 10;
 invisible = false;
+vectorY = 0;
+vectorX = 0;
+Dx = 0;
+Dy = 0;
+dir = 0
+vect2 = 0;
+dead = false;
+life = 3;
 
 /*
 fct_Move = function()
@@ -79,6 +87,7 @@ fct_Move = function()
 
 fct_MoveH = function(iDirection)//iDirection = -1 ou 1
 {
+	if(!dead){
 		var lay_id = layer_get_id("Tiles_Walls");
 		var map_id = layer_tilemap_get_id(lay_id);
 		if(iDirection == 1)
@@ -103,6 +112,7 @@ fct_MoveH = function(iDirection)//iDirection = -1 ou 1
 			}
 			else{ hspeed = 0}
 		}
+	}
 		//x+= hspeed*iDirection
 		//if(iDirection==1){droite=true}else{if(iDirection==-1){gauche=true}}
 		
@@ -112,7 +122,7 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 {
 		var lay_id = layer_get_id("Tiles_Walls");
 		var map_id = layer_tilemap_get_id(lay_id);
-		
+	if(!dead){
 		if(iDirection == -1)
 		{
 			var up_Left  = tilemap_get_at_pixel(map_id, bbox_left,  bbox_top -moveSpeed);
@@ -140,7 +150,7 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 			}
 			else{ vspeed = 0}
 		}
-		
+	}
 		//x+= hspeed*iDirection
 		//if(iDirection==1){droite=true}else{if(iDirection==-1){gauche=true}}
 		
@@ -149,7 +159,7 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 
 fct_Angle = function()
 {
-	if((keyboard_check(vk_right)) || (keyboard_check(vk_left))){image_angle = image_angleH}
+	/*if((keyboard_check(vk_right)) || (keyboard_check(vk_left))){image_angle = image_angleH}
 	if((keyboard_check(vk_up)) || (keyboard_check(vk_down))){image_angle = image_angleV}
 	
 	if(keyboard_check(vk_up) && (keyboard_check(vk_left)) || (keyboard_check(vk_up)) &&  (keyboard_check(vk_right)))
@@ -163,7 +173,10 @@ fct_Angle = function()
 		if(keyboard_check(vk_down) && (keyboard_check(vk_right)))
 	{
 		image_angle = 320
-	}
+	}*/
+	
+	direction = point_direction(0,0,vectorX,vectorY)
+	image_angle = direction
 }
 
 fct_Damage = function()
