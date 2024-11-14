@@ -44,11 +44,13 @@
     {"$GMFolder":"","%Name":"Spr_obstacle","folderPath":"folders/Sprites/Spr_obstacle.yy","name":"Spr_obstacle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile sets","folderPath":"folders/Tile sets.yy","name":"Tile sets","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"backgroundmenu.mp4","CopyToMask":-1,"filePath":"datafiles","name":"backgroundmenu.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"ZONE 51",
   "resources":[
@@ -71,6 +73,8 @@
     {"id":{"name":"obj_laser_bleu","path":"objects/obj_laser_bleu/obj_laser_bleu.yy",},},
     {"id":{"name":"obj_laser_rouge","path":"objects/obj_laser_rouge/obj_laser_rouge.yy",},},
     {"id":{"name":"obj_laser_source","path":"objects/obj_laser_source/obj_laser_source.yy",},},
+    {"id":{"name":"obj_menubackground","path":"objects/obj_menubackground/obj_menubackground.yy",},},
+    {"id":{"name":"obj_mute","path":"objects/obj_mute/obj_mute.yy",},},
     {"id":{"name":"obj_obst_manager","path":"objects/obj_obst_manager/obj_obst_manager.yy",},},
     {"id":{"name":"obj_pit","path":"objects/obj_pit/obj_pit.yy",},},
     {"id":{"name":"obj_pressure_plate","path":"objects/obj_pressure_plate/obj_pressure_plate.yy",},},
@@ -157,6 +161,7 @@
     {"id":{"name":"spr_laser_bleu","path":"sprites/spr_laser_bleu/spr_laser_bleu.yy",},},
     {"id":{"name":"spr_laser_rouge","path":"sprites/spr_laser_rouge/spr_laser_rouge.yy",},},
     {"id":{"name":"spr_laser_source","path":"sprites/spr_laser_source/spr_laser_source.yy",},},
+    {"id":{"name":"spr_mute","path":"sprites/spr_mute/spr_mute.yy",},},
     {"id":{"name":"spr_pit","path":"sprites/spr_pit/spr_pit.yy",},},
     {"id":{"name":"spr_pressure_plate","path":"sprites/spr_pressure_plate/spr_pressure_plate.yy",},},
     {"id":{"name":"spr_spike","path":"sprites/spr_spike/spr_spike.yy",},},
