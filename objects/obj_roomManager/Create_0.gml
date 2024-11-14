@@ -1,16 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
+//Le Room Manager est persistant 
+
 randomize() //randomisation de seed
 
 nb_rooms_seen = 0;
 
-
+//On stocke les rooms dans des tableaux, selon de quel cote est l'entree
 roomWestEntrance = [rm_W_E_01, rm_W_E_02, rm_W_S_01, rm_W_S_02, rm_W_N_01, rm_W_N_02, rm_W_W_01, rm_W_W_02];
 roomEastEntrance = [rm_E_E_01, rm_E_E_02, rm_E_S_01, rm_E_S_02, rm_E_N_01, rm_E_N_02, rm_E_W_01, rm_E_W_02];
 roomNorthEntrance = [rm_N_E_01, rm_N_E_02, rm_N_S_01, rm_N_S_02, rm_N_N_01, rm_N_N_02, rm_N_W_01, rm_N_W_02];
 roomSouthEntrance = [rm_S_E_01, rm_S_E_02, rm_S_S_01, rm_S_S_02, rm_S_N_01, rm_S_N_02, rm_S_W_01, rm_S_W_02];
 
+
+//Les rooms finales, avec des entrées différentes. Elles sont appelées quand le jouer a exploré assez de rooms (variable max_rooms)
 endWestEntrance = [rm_W_Exit];
 endEastEntrance = [rm_E_Exit];
 endNorthEntrance = [rm_N_Exit];
@@ -21,22 +27,19 @@ endSouthEntrance = [rm_S_Exit];
 fct_ChangeRoom = function()
 {
 	
-	show_debug_message(roomWestEntrance)
-	
-	var nextRoomArray = fct_RoomSelection()
+	var nextRoomArray = fct_RoomSelection() 
 	
 	var randomIndex = irandom_range(0, array_length(nextRoomArray)-1) //Generer index aleatoire
-	
-	show_debug_message(randomIndex)
-	
+		
 	var targetRoom = nextRoomArray[randomIndex] //Aller chercher la room a l'index defini avant
 	
 	room_goto(targetRoom)
-	nb_rooms_seen += 1;
+	
+	nb_rooms_seen += 1; //Combien de rooms le joueur a traversé
 	
 	array_delete(nextRoomArray, randomIndex, 1); //Supprimer la prochaine room du pool de rooms disponibles
 		
-	room_instance_add(targetRoom, 0, 0, obj_backgroundFilter);
+	room_instance_add(targetRoom, 0, 0, obj_backgroundFilter); //On ajoute le filtre pour le background dans la prochaine room
 }
 
 
@@ -68,11 +71,9 @@ fct_RoomSelection = function()
 			else return roomSouthEntrance;
 	    break;
 
-	    //default:
-	    //    draw_sprite(20, 20, spr_face_fainted);
-	    //break;
+	   
 	}
 }
 	
 
-audio_play_sound(snd_ambient_music,10,3,5)
+audio_play_sound(snd_ambient_music,10,3,5) //musique de fond
