@@ -15,6 +15,7 @@
     {"name":"inst_17F6DA89","path":"rooms/rm_B_E/rm_B_E.yy",},
     {"name":"inst_56D1DE0","path":"rooms/rm_B_E/rm_B_E.yy",},
     {"name":"inst_3B77A04C","path":"rooms/rm_B_E/rm_B_E.yy",},
+    {"name":"inst_702708C2","path":"rooms/rm_B_E/rm_B_E.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -50,6 +51,7 @@
     {"$GMRInstanceLayer":"","%Name":"Managers","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_5B836A5F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5B836A5F","objectId":{"name":"obj_roomManager","path":"objects/obj_roomManager/obj_roomManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":112.0,},
         {"$GMRInstance":"","%Name":"inst_27C3C796","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_27C3C796","objectId":{"name":"obj_backgroundFilter","path":"objects/obj_backgroundFilter/obj_backgroundFilter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":144.0,},
+        {"$GMRInstance":"","%Name":"inst_702708C2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_702708C2","objectId":{"name":"obj_gameManager","path":"objects/obj_gameManager/obj_gameManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":176.0,},
       ],"layers":[],"name":"Managers","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Button_gate","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_17F6DA89","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17F6DA89","objectId":{"name":"obj_pressure_plate","path":"objects/obj_pressure_plate/obj_pressure_plate.yy",},"properties":[

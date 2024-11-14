@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 var reset = keyboard_check(vk_space);
-
+if(!dead) // si pas mort : deplacement + dash ...
+{
 if(keyboard_check(vk_shift) && !dead)
 {
 	if(keyboard_check(vk_left)||keyboard_check(vk_right)||keyboard_check(vk_down)||keyboard_check(vk_down)){}
@@ -75,7 +76,7 @@ if(!keyboard_check(vk_anykey) && (gamepad_axis_value(0,gp_axislh)==0))
 	invisible = true;
 }
 else {invisible = false}
-if(invisible == true)
+if(invisible == true && !dead)
 {
 	image_alpha -= 0.01
 	if(image_alpha <= 0.3){image_alpha=0.3}
@@ -84,6 +85,8 @@ else
 {
 	image_alpha = 1
 }
+
+// init_slowdown = derapage
 
 if (keyboard_check_released(vk_right) && init_slowdown == false) {
     init_slowdown = true;
@@ -204,22 +207,24 @@ if ( init_slowdown4 )
 	
 
 }
-if(collision_rectangle(x-sprite_width*0.4,y-sprite_height*0.4,x+sprite_width*0.4,y+sprite_height*0.4,obj_spike,false,true)){
-	if ((obj_spike.image_index == 11) || (obj_spike.image_index == 12))
-	{
-		dead = true;
-	}
+
+fct_Damage();
+
 }
+
+
 if(dead == true)
 {
-	image_speed = 1
-	sprite_index = spr_alien_dead
-	hspeed = 0
-	vspeed = 0
-	speed = 0
-	if(image_index == -1)
+	sprite_index = spr_alien_dead;
+	image_alpha = 1;
+	hspeed = 0;
+	vspeed = 0;
+	speed = 0;
+	
+	if(image_index == 12)
 	{
-		image_speed = 0
+		image_speed = 0;
+		image_index = 13;
 	}
 }
 //Juste pour tester

@@ -16,12 +16,10 @@ dashDuration = 10;
 invisible = false;
 vectorY = 0;
 vectorX = 0;
-Dx = 0;
-Dy = 0;
 dir = 0
 vect2 = 0;
 dead = false;
-life = 3;
+
 
 /*
 fct_Move = function()
@@ -120,9 +118,10 @@ fct_MoveH = function(iDirection)//iDirection = -1 ou 1
 
 fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 {
+		
+	if(!dead){
 		var lay_id = layer_get_id("Tiles_Walls");
 		var map_id = layer_tilemap_get_id(lay_id);
-	if(!dead){
 		if(iDirection == -1)
 		{
 			var up_Left  = tilemap_get_at_pixel(map_id, bbox_left,  bbox_top -moveSpeed);
@@ -174,12 +173,21 @@ fct_Angle = function()
 	{
 		image_angle = 320
 	}*/
+	if(!dead){
 	
 	direction = point_direction(0,0,vectorX,vectorY)
-	image_angle = direction
+	image_angle = direction}
 }
 
 fct_Damage = function()
 {
-	show_debug_message("DAMAGE")
+	if(collision_rectangle(x-sprite_width*0.4,y-sprite_height*0.4,x+sprite_width*0.4,y+sprite_height*0.4,obj_spike,false,true)&& !dead)
+	{
+		if ((obj_spike.image_index == 11) || (obj_spike.image_index == 12))
+		{
+			dead = true;
+			image_speed = 1;
+		}
+	}
+	
 }

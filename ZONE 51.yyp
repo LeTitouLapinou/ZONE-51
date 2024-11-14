@@ -69,6 +69,7 @@
     {"id":{"name":"obj_door_exit","path":"objects/obj_door_exit/obj_door_exit.yy",},},
     {"id":{"name":"obj_exit","path":"objects/obj_exit/obj_exit.yy",},},
     {"id":{"name":"obj_fence","path":"objects/obj_fence/obj_fence.yy",},},
+    {"id":{"name":"obj_gameManager","path":"objects/obj_gameManager/obj_gameManager.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
     {"id":{"name":"obj_laser_bleu","path":"objects/obj_laser_bleu/obj_laser_bleu.yy",},},
     {"id":{"name":"obj_laser_rouge","path":"objects/obj_laser_rouge/obj_laser_rouge.yy",},},
