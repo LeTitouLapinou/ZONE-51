@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"scr_camrecB",
   "isCompatibility":false,
   "isDnD":false,
