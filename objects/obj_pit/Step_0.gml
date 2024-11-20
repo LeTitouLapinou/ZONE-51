@@ -7,4 +7,4 @@ if instance_exists(obj_warden)
 }
 else
 image_speed=0;
-image_index=1;
+image_index=0;

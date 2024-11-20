@@ -1,3 +1,3 @@
 /// @description Insert description here
-// You can write your code in this editor
+// regarde si il peut chasser le joueur
 Check_player();

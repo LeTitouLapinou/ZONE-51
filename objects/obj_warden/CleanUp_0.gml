@@ -1,3 +1,3 @@
 /// @description Insert description here
-// You can write your code in this editor
+// quand warden arrive au joueur fin de la chase
 path_delete(pursuit);
