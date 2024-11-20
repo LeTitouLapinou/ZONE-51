@@ -211,10 +211,18 @@ if ( init_slowdown4 )
 fct_Damage();
 
 }
-
+if(deadpit == true)
+{
+			hspeed = 0; vspeed = 0;
+		image_xscale -= 0.01
+		image_yscale -= 0.01
+		if(image_xscale <= 0.1){dead = true; deadpit=false; image_speed = 1; }
+}
 
 if(dead == true)
 {
+	image_xscale = 1
+	image_yscale = 1
 	sprite_index = spr_alien_dead;
 	image_alpha = 1;
 	hspeed = 0;

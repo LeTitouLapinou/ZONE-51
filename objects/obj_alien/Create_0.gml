@@ -19,7 +19,7 @@ vectorX = 0;
 dir = 0
 vect2 = 0;
 dead = false;
-
+deadpit = false;
 
 /*
 fct_Move = function()
@@ -90,8 +90,8 @@ fct_MoveH = function(iDirection)//iDirection = -1 ou 1
 		var map_id = layer_tilemap_get_id(lay_id);
 		if(iDirection == 1)
 		{
-			var right_Top = tilemap_get_at_pixel(map_id, bbox_right +moveSpeed, bbox_top);
-			var right_Bot = tilemap_get_at_pixel(map_id, bbox_right +moveSpeed, bbox_bottom);
+			var right_Top = tilemap_get_at_pixel(map_id, bbox_right +hspeed, bbox_top);
+			var right_Bot = tilemap_get_at_pixel(map_id, bbox_right +hspeed, bbox_bottom);
 			if (right_Top == 0 and right_Bot == 0)
 			{
 				hspeed = lerp(hspeed,moveSpeed*iDirection,0.02)
@@ -101,8 +101,8 @@ fct_MoveH = function(iDirection)//iDirection = -1 ou 1
 		}
 		if(iDirection == -1)
 		{
-			var left_Top = tilemap_get_at_pixel(map_id, bbox_left-moveSpeed, bbox_top); //coin haut gauche
-			var left_Bot = tilemap_get_at_pixel(map_id, bbox_left-moveSpeed, bbox_bottom);
+			var left_Top = tilemap_get_at_pixel(map_id, bbox_left-hspeed, bbox_top); //coin haut gauche
+			var left_Bot = tilemap_get_at_pixel(map_id, bbox_left-hspeed, bbox_bottom);
 			if (left_Top == 0 and left_Bot == 0)
 			{
 				hspeed = lerp(hspeed,moveSpeed*iDirection,0.02)
@@ -124,8 +124,8 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 		var map_id = layer_tilemap_get_id(lay_id);
 		if(iDirection == -1)
 		{
-			var up_Left  = tilemap_get_at_pixel(map_id, bbox_left,  bbox_top -moveSpeed);
-			var up_Right = tilemap_get_at_pixel(map_id, bbox_right, bbox_top -moveSpeed);
+			var up_Left  = tilemap_get_at_pixel(map_id, bbox_left,  bbox_top -vspeed);
+			var up_Right = tilemap_get_at_pixel(map_id, bbox_right, bbox_top -vspeed);
 			
 			if (up_Left == 0 and up_Right == 0)
 			{
@@ -139,8 +139,8 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 		}
 		if(iDirection == 1)
 		{
-			var down_Left  = tilemap_get_at_pixel(map_id, bbox_left,  bbox_bottom +moveSpeed);
-			var down_Right = tilemap_get_at_pixel(map_id, bbox_right, bbox_bottom +moveSpeed);
+			var down_Left  = tilemap_get_at_pixel(map_id, bbox_left,  bbox_bottom +vspeed);
+			var down_Right = tilemap_get_at_pixel(map_id, bbox_right, bbox_bottom +vspeed);
    
 			if (down_Left == 0 and down_Right == 0)
 			{
@@ -158,36 +158,35 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 
 fct_Angle = function()
 {
-	/*if((keyboard_check(vk_right)) || (keyboard_check(vk_left))){image_angle = image_angleH}
-	if((keyboard_check(vk_up)) || (keyboard_check(vk_down))){image_angle = image_angleV}
-	
-	if(keyboard_check(vk_up) && (keyboard_check(vk_left)) || (keyboard_check(vk_up)) &&  (keyboard_check(vk_right)))
-	{
-		image_angle = (image_angleV + image_angleH)*0.5
-	}
-	if((keyboard_check(vk_down)) &&  (keyboard_check(vk_left)))
-	{
-		image_angle = (image_angleV + image_angleH)*0.5
-	}
-		if(keyboard_check(vk_down) && (keyboard_check(vk_right)))
-	{
-		image_angle = 320
-	}*/
+		var lay_id = layer_get_id("Tiles_Walls");
+		var map_id = layer_tilemap_get_id(lay_id);
+
 	if(!dead){
 	
-	direction = point_direction(0,0,vectorX,vectorY)
-	image_angle = direction}
+		direction = point_direction(0,0,vectorX,vectorY)
+		image_angle = direction
+		if(place_meeting(x+hspeed, y+vspeed,map_id))
+		{
+			hspeed = 0;
+			vspeed = 0;
+		}
+	}
 }
 
 fct_Damage = function()
 {
-	if(collision_rectangle(x-sprite_width*0.4,y-sprite_height*0.4,x+sprite_width*0.4,y+sprite_height*0.4,obj_spike,false,true)&& !dead)
+	if(collision_rectangle(x-sprite_width*0.4,y-sprite_height*0.4,x+sprite_width*0.4,y+sprite_height*0.4,obj_spike,false,true)&& !dead)//spike = dead
 	{
 		if ((obj_spike.image_index == 11) || (obj_spike.image_index == 12))
 		{
 			dead = true;
 			image_speed = 1;
 		}
+	}
+	if(collision_point(x-2,y,obj_pit,false,true)&& !dead)//pit = tomber ahh moment
+	{
+		deadpit = true;
+		
 	}
 	
 }
