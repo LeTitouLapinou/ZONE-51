@@ -184,7 +184,7 @@ if (keyboard_check_released(vk_down) && init_slowdown4 == false) {
 
 if ( init_slowdown4 )
 {
-		var lay_id = layer_get_id("Tiles_Walls");
+	var lay_id = layer_get_id("Tiles_Walls");
 	var map_id = layer_tilemap_get_id(lay_id);
 	var down_Left  = tilemap_get_at_pixel(map_id, bbox_left,  bbox_bottom +moveSpeed);
 	var down_Right = tilemap_get_at_pixel(map_id, bbox_right, bbox_bottom +moveSpeed);
@@ -232,6 +232,7 @@ if(dead == true)
 	{
 		image_speed = 0;
 		image_index = 13;
+		
 	}
 }
 //Juste pour tester

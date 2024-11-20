@@ -97,7 +97,8 @@ fct_MoveH = function(iDirection)//iDirection = -1 ou 1
 				hspeed = lerp(hspeed,moveSpeed*iDirection,0.02)
 				image_speed = lerp(image_speed,iVitesse,0.05)
 			}
-			else{ hspeed = 0}
+			else{ hspeed = 0
+				x -= 4*iDirection}
 		}
 		if(iDirection == -1)
 		{
@@ -108,7 +109,8 @@ fct_MoveH = function(iDirection)//iDirection = -1 ou 1
 				hspeed = lerp(hspeed,moveSpeed*iDirection,0.02)
 				image_speed = lerp(image_speed,iVitesse,0.05)
 			}
-			else{ hspeed = 0}
+			else{ hspeed = 0
+				x -= 4*iDirection}
 		}
 	}
 		//x+= hspeed*iDirection
@@ -129,12 +131,15 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
 			
 			if (up_Left == 0 and up_Right == 0)
 			{
+				
 				vspeed = lerp(vspeed,moveSpeed*iDirection,0.02)
 				image_speed = lerp(image_speed,iVitesse,0.05)
+				
 			}
 			else
 			{
 				vspeed = 0;
+				y += 4*!iDirection
 			}
 		}
 		if(iDirection == 1)
@@ -144,10 +149,12 @@ fct_MoveV = function(iDirection)//iDirection = -1 ou 1
    
 			if (down_Left == 0 and down_Right == 0)
 			{
+				if(!place_meeting(x,y+vspeed,map_id)){
 				vspeed = lerp(vspeed,moveSpeed*iDirection,0.02)
-				image_speed = lerp(image_speed,iVitesse,0.05)
+				image_speed = lerp(image_speed,iVitesse,0.05)}
 			}
-			else{ vspeed = 0}
+			else{ vspeed = 0
+				y -= 4*iDirection}
 		}
 	}
 		//x+= hspeed*iDirection
@@ -165,7 +172,15 @@ fct_Angle = function()
 	
 		direction = point_direction(0,0,vectorX,vectorY)
 		image_angle = direction
+		if(place_meeting(x,y+vspeed,map_id)){vspeed = 0}
+		if(place_meeting(x,y+hspeed,map_id)){hspeed = 0}
 		if(place_meeting(x+hspeed, y+vspeed,map_id))
+		{
+			hspeed = 0;
+			vspeed = 0;
+			
+		}
+		if(place_meeting(x-hspeed, y-vspeed,map_id))
 		{
 			hspeed = 0;
 			vspeed = 0;
