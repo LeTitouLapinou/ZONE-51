@@ -178,4 +178,5 @@ fct_Damage = function()
 
 	dead = true;
 	image_speed = 1;
+	
 }
