@@ -3,7 +3,7 @@
 
 if keyboard_check(ord("G"))
 {
-	room_goto(gym_gab);
+	room_goto(rm_E_N_01);
 }
 
 if keyboard_check(ord("L"))

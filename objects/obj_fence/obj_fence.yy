@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_fence",
+    "path":"sprites/spr_fence/spr_fence.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

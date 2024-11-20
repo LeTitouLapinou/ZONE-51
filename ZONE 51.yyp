@@ -161,6 +161,7 @@
     {"id":{"name":"spr_ending","path":"sprites/spr_ending/spr_ending.yy",},},
     {"id":{"name":"spr_example_game","path":"sprites/spr_example_game/spr_example_game.yy",},},
     {"id":{"name":"spr_exit","path":"sprites/spr_exit/spr_exit.yy",},},
+    {"id":{"name":"spr_fence","path":"sprites/spr_fence/spr_fence.yy",},},
     {"id":{"name":"spr_floors","path":"sprites/spr_floors/spr_floors.yy",},},
     {"id":{"name":"spr_gate","path":"sprites/spr_gate/spr_gate.yy",},},
     {"id":{"name":"spr_laser_bleu","path":"sprites/spr_laser_bleu/spr_laser_bleu.yy",},},
