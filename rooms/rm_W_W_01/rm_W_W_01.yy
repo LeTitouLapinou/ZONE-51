@@ -164,13 +164,14 @@
         {"$GMRInstance":"","%Name":"inst_5E1C995C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E1C995C","objectId":{"name":"obj_pit","path":"objects/obj_pit/obj_pit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":368.0,},
         {"$GMRInstance":"","%Name":"inst_66E331CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66E331CA","objectId":{"name":"obj_laser_source","path":"objects/obj_laser_source/obj_laser_source.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_laser_source","path":"objects/obj_laser_source/obj_laser_source.yy",},"propertyId":{"name":"deplacement","path":"objects/obj_laser_source/obj_laser_source.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"14",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_laser_source","path":"objects/obj_laser_source/obj_laser_source.yy",},"propertyId":{"name":"var_speed","path":"objects/obj_laser_source/obj_laser_source.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":4.0,"x":152.0,"y":96.0,},
       ],"layers":[],"name":"obstacles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_Walls","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Walls","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":60,"TileCompressedData":[
           -31,0,-29,-2147483648,-31,0,-29,-2147483648,-31,0,-29,-2147483648,2,0,21,-33,13,1,22,-24,-2147483648,
           2,21,13,-29,0,-4,-2147483648,-2,13,1,22,-22,-2147483648,1,13,-30,0,-6,-2147483648,2,13,22,-21,-2147483648,
-          1,1,-30,0,-7,-2147483648,2,13,22,-20,-2147483648,1,20,-30,0,-8,-2147483648,2,13,22,-19,-2147483648,1,
-          28,-28,13,2,20,0,-9,-2147483648,1,30,-19,-2147483648,-29,0,3,28,13,20,-8,-2147483648,1,30,-19,-2147483648,
+          -31,0,-7,-2147483648,2,13,22,-20,-2147483648,1,20,-30,0,-8,-2147483648,2,13,22,-19,-2147483648,1,28,
+          -28,13,2,20,0,-9,-2147483648,1,30,-19,-2147483648,-29,0,3,28,13,20,-8,-2147483648,1,30,-19,-2147483648,
           -31,0,2,28,20,-7,-2147483648,1,30,-19,-2147483648,-31,0,3,-2147483648,28,20,-6,-2147483648,1,30,-19,
           -2147483648,-7,0,-16,13,-8,0,-2,-2147483648,2,28,20,-5,-2147483648,1,30,-19,-2147483648,1,21,-6,13,-16,
           0,-2,13,1,22,-5,0,-3,-2147483648,1,29,-5,-2147483648,1,30,-19,-2147483648,1,13,-24,0,1,30,-5,0,-3,-2147483648,
