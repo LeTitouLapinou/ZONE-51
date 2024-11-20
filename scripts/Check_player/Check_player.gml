@@ -9,7 +9,7 @@ function Check_player()
 	//peut aller au joueur
 	if _aim_alien
 	{
-		path_start(pursuit,1,path_action_stop,false);	
+		path_start(pursuit,3.5,path_action_stop,false);	
 	}
 	
 

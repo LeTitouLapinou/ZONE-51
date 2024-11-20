@@ -1,13 +1,13 @@
 /// @description Insert description here
-// You can write your code in this editor
+// est que le warden est la
 if instance_exists(obj_warden)
 {
-	working = false;
+	working = false;// warden est la marche pu
 	not_working=true;
 	image_index = 0;
 }
-else
+else 
 {
-	working = true;
+	working = true;//warden pas la marche
 	not_working=false;
 }
