@@ -11,4 +11,6 @@ function Check_player()
 	{
 		path_start(pursuit,1,path_action_stop,false);	
 	}
+	
+
 }
