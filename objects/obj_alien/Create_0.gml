@@ -175,18 +175,7 @@ fct_Angle = function()
 
 fct_Damage = function()
 {
-	if(collision_rectangle(x-sprite_width*0.4,y-sprite_height*0.4,x+sprite_width*0.4,y+sprite_height*0.4,obj_spike,false,true)&& !dead)//spike = dead
-	{
-		if ((obj_spike.image_index == 11) || (obj_spike.image_index == 12))
-		{
-			dead = true;
-			image_speed = 1;
-		}
-	}
-	if(collision_point(x-2,y,obj_pit,false,true)&& !dead)//pit = tomber ahh moment
-	{
-		deadpit = true;
-		
-	}
-	
+
+	dead = true;
+	image_speed = 1;
 }
