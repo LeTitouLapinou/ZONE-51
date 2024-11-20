@@ -208,7 +208,6 @@ if ( init_slowdown4 )
 
 }
 
-fct_Damage();
 
 }
 if(deadpit == true)
