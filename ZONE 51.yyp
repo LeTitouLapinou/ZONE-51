@@ -175,6 +175,7 @@
     {"id":{"name":"spr_tileset_alien","path":"sprites/spr_tileset_alien/spr_tileset_alien.yy",},},
     {"id":{"name":"spr_titles","path":"sprites/spr_titles/spr_titles.yy",},},
     {"id":{"name":"spr_walls","path":"sprites/spr_walls/spr_walls.yy",},},
+    {"id":{"name":"spr_warden","path":"sprites/spr_warden/spr_warden.yy",},},
     {"id":{"name":"tile_floors","path":"tilesets/tile_floors/tile_floors.yy",},},
     {"id":{"name":"tile_walls","path":"tilesets/tile_walls/tile_walls.yy",},},
   ],

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_alienV",
-    "path":"sprites/spr_alienV/spr_alienV.yy",
+    "name":"spr_warden",
+    "path":"sprites/spr_warden/spr_warden.yy",
   },
   "spriteMaskId":null,
   "visible":true,
