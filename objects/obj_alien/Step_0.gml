@@ -229,7 +229,7 @@ if(dead == true)
 	vspeed = 0;
 	speed = 0;
 	
-	if(image_index <= 12)
+	if(image_index >= 11)
 	{
 		image_speed = 0;
 		image_index = 13;

@@ -4,3 +4,7 @@ if(bActive)
 {
 	DrawPoints();
 }
+if(bActive2)
+{
+	DrawPoints2();
+}
