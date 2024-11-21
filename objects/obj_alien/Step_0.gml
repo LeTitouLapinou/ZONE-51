@@ -23,6 +23,7 @@ if(keyboard_check_released(vk_shift) && !dead)
 	if(!collision_line(x,y,x+vectorX*50,y+vectorY*50,map_id,false,true))
 	{
 		motion_add(image_angle,10)
+		dash = true;
 		alarm_set(0,5)
 		//x += lengthdir_x(50, image_angle);
 		//y += lengthdir_y(50, image_angle); 
