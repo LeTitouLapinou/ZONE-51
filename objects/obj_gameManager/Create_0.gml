@@ -28,6 +28,6 @@ DrawPoints2 = function(hexCol = c_silver)//affichage mort
 				fAlpha)
 }
 
-audio_play_sound(snd_music_base, 10, true, 0.5)
-audio_play_sound(snd_music_chase, 10, true, 0.5)
-audio_sound_gain(snd_music_base,7,0)
+audio_play_sound(snd_music_base, 10, true, 0.5);
+audio_play_sound(snd_music_chase, 10, true, 0.5);
+audio_sound_gain(snd_music_base,7,0);

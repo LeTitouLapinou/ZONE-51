@@ -1,4 +1,4 @@
-/// @description gestion de mort du joueur
+/// @description gestion de mort du joueur et de l'audio du jeu (ingame)
 // You can write your code in this editor
 bActive = true;
 
@@ -12,6 +12,7 @@ if(obj_alien.dead == true)
 		room_restart();
 	}
 }
+
 if(life <= 0)
 {
 	game_restart()

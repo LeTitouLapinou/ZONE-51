@@ -27,6 +27,8 @@ if(!dead) // si pas mort : deplacement + dash ...
 			if(!collision_line(x,y,x+vectorX*50,y+vectorY*50,map_id,false,true))
 			{
 				motion_add(image_angle,10)
+				var snd = audio_play_sound(snd_dash,10,false,10)
+				audio_sound_set_track_position(snd,30)
 				cooldown= true;
 				alarm_set(1,240)
 				dash = true;
