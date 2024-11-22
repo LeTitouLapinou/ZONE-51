@@ -33,6 +33,20 @@ if(instance_exists(obj_spike))
 	}
 }
 
+if(room == rm_B_E)//affichage des touches au début
+{
+	if(!keyboard_check(vk_anykey))
+	{
+		bActive3 = true;
+		ffAlpha += 0.01;
+	}
+	else
+	{
+		bActive3 = false;
+		ffAlpha = 0;
+	}
+}
+
 if(room == rm_ENDING_SCREEN)//entrer pour reset le jeu
 {
 	if(keyboard_check(vk_space))

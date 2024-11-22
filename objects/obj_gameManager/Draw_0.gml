@@ -8,3 +8,7 @@ if(bActive2)
 {
 	DrawPoints2();
 }
+if(bActive3)
+{
+	DrawPoints3();
+}

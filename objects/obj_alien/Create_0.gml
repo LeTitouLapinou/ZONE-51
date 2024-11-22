@@ -22,7 +22,10 @@ vect2 = 0;
 dead = false;
 deadpit = false;
 cooldown = false;
-
+fD = ord("D")
+fW = ord("W")
+fA = ord("A")
+fS = ord("S")
 
 fct_MoveH = function(iDirection)//deplacement horizontal
 {

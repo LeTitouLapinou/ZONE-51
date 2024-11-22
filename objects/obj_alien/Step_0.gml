@@ -8,7 +8,7 @@ if(!dead) // si pas mort : deplacement + dash ...
 		if(keyboard_check(vk_shift) && !dead)//prep dash
 		{
 			
-			if(keyboard_check(vk_left)||keyboard_check(vk_right)||keyboard_check(vk_down)||keyboard_check(vk_down)){}
+			if(keyboard_check(fA)||keyboard_check(fD)||keyboard_check(fS)||keyboard_check(fS)){}
 			else
 			{
 				image_index = 0;
@@ -35,39 +35,40 @@ if(!dead) // si pas mort : deplacement + dash ...
 			else{alarm_set(0,1)}
 		}
 	}
-	if(keyboard_check(vk_left))
+	//deplacements :
+	if(keyboard_check(fA))
 	{
 		//image_angleH = 180
 		fct_MoveH(-1);
-		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
-		vectorY = keyboard_check(vk_down) - keyboard_check(vk_up);
+		vectorX = keyboard_check(fD) - keyboard_check(fA);
+		vectorY = keyboard_check(fS) - keyboard_check(fW);
 		vect2 = [vectorX, vectorY]
 	}
 
-	if(keyboard_check(vk_right))
+	if(keyboard_check(fD))
 	{
 		//image_angleH = 0
 		fct_MoveH(1);
-		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
-		vectorY = keyboard_check(vk_down) - keyboard_check(vk_up);
+		vectorX = keyboard_check(fD) - keyboard_check(fA);
+		vectorY = keyboard_check(fS) - keyboard_check(fW);
 		vect2 = [vectorX, vectorY]
 	}
 
-	if(keyboard_check(vk_down))
+	if(keyboard_check(fS))
 	{
 		//image_angleV = 270
 		fct_MoveV(1);
-		vectorY = keyboard_check(vk_down) - keyboard_check(vk_up);
-		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
+		vectorY = keyboard_check(fS) - keyboard_check(fW);
+		vectorX = keyboard_check(fD) - keyboard_check(fA);
 		vect2 = [vectorX, vectorY]
 	}
 
-	if(keyboard_check(vk_up))
+	if(keyboard_check(fW))
 	{
 		//image_angleV = 90
 		fct_MoveV(-1);
-		vectorY = keyboard_check(vk_down) - keyboard_check(vk_up);
-		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
+		vectorY = keyboard_check(fS) - keyboard_check(fW);
+		vectorX = keyboard_check(fD) - keyboard_check(fA);
 		vect2 = [vectorX, vectorY]
 	}
 
@@ -78,6 +79,7 @@ if(!keyboard_check(vk_anykey) && (gamepad_axis_value(0,gp_axislh)==0))//invisibi
 	image_index = 1;
 	image_speed = 0;
 	inv = true;
+	
 }
 else {inv = false}
 show_debug_message(cooldown)
@@ -96,7 +98,7 @@ else
 
 // init_slowdown = derapage
 
-if (keyboard_check_released(vk_right) && init_slowdown == false) {
+if (keyboard_check_released(fD) && init_slowdown == false) {
     init_slowdown = true;
 }
 
@@ -125,7 +127,7 @@ if ( init_slowdown )
 	
 }
 
-if (keyboard_check_released(vk_left)  && init_slowdown2 == false){
+if (keyboard_check_released(fA)  && init_slowdown2 == false){
     init_slowdown2 = true;
 
 }
@@ -156,7 +158,7 @@ if ( init_slowdown2 )
 	}
 }
 
-if (keyboard_check_released(vk_up)  && init_slowdown3 == false){
+if (keyboard_check_released(fW)  && init_slowdown3 == false){
     init_slowdown3 = true;
 
 }
@@ -186,7 +188,7 @@ if ( init_slowdown3 )
 	}
 }
 
-if (keyboard_check_released(vk_down) && init_slowdown4 == false) {
+if (keyboard_check_released(fS) && init_slowdown4 == false) {
     init_slowdown4 = true;
 }
 
