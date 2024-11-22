@@ -4,32 +4,39 @@
 var reset = keyboard_check(vk_space);
 if(!dead) // si pas mort : deplacement + dash ...
 {
-if(keyboard_check(vk_shift) && !dead)
-{
-	if(keyboard_check(vk_left)||keyboard_check(vk_right)||keyboard_check(vk_down)||keyboard_check(vk_down)){}
-	else
-	{
-		image_index = 0;
-	}
-	if(instance_number(obj_dash)<=1){instance_create_layer(x,y,"Instances",obj_dash)}
-}
+	if(!cooldown){
+		
+		
+		if(keyboard_check(vk_shift) && !dead)
+		{
+			
+			if(keyboard_check(vk_left)||keyboard_check(vk_right)||keyboard_check(vk_down)||keyboard_check(vk_down)){}
+			else
+			{
+				image_index = 0;
+			}
+			if(instance_number(obj_dash)<=1){instance_create_layer(x,y,"Instances",obj_dash)}
+		}
 
-if(keyboard_check_released(vk_shift) && !dead)
-{
-	instance_destroy(obj_dash)
-	var lay_id = layer_get_id("Tiles_Walls");
-	var map_id = layer_tilemap_get_id(lay_id);
-	
-	if(!collision_line(x,y,x+vectorX*50,y+vectorY*50,map_id,false,true))
-	{
-		motion_add(image_angle,10)
-		dash = true;
-		alarm_set(0,5)
-		//x += lengthdir_x(50, image_angle);
-		//y += lengthdir_y(50, image_angle); 
+		if(keyboard_check_released(vk_shift) && !dead)
+		{
+			instance_destroy(obj_dash)
+			var lay_id = layer_get_id("Tiles_Walls");
+			var map_id = layer_tilemap_get_id(lay_id);
+			
+			if(!collision_line(x,y,x+vectorX*50,y+vectorY*50,map_id,false,true))
+			{
+				motion_add(image_angle,10)
+				cooldown= true;
+				alarm_set(1,240)
+				dash = true;
+				alarm_set(0,5)
+				//x += lengthdir_x(50, image_angle);
+				//y += lengthdir_y(50, image_angle); 
+			}
+			else{alarm_set(0,1)}
+		}
 	}
-	else{alarm_set(0,1)}
-}
 	if(keyboard_check(vk_left))
 	{
 		//image_angleH = 180
@@ -75,7 +82,7 @@ if(!keyboard_check(vk_anykey) && (gamepad_axis_value(0,gp_axislh)==0))//invisibi
 	inv = true;
 }
 else {inv = false}
-show_debug_message(invisible)
+show_debug_message(cooldown)
 if(inv == true && !dead)//invisible
 {
 	

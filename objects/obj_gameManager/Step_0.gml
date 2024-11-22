@@ -1,7 +1,7 @@
 /// @description gestion de mort du joueur
 // You can write your code in this editor
 bActive = true;
-show_debug_message(test)
+
 if(obj_alien.dead == true)
 {
 	bActive2 = true;
@@ -16,4 +16,18 @@ if(life <= 0)
 {
 	game_restart()
 }
-test ++
+
+if(instance_exists(obj_warden))
+{
+	audio_sound_gain(snd_music_chase,8,0)
+	
+}
+if(!instance_exists(obj_warden)){audio_sound_gain(snd_music_chase,0,0)}
+
+if(instance_exists(obj_spike))
+{
+	if(obj_spike.image_index == 11)
+	{
+		audio_play_sound(snd_spike,10,false,0.5)
+	}
+}

@@ -21,6 +21,7 @@ dir = 0
 vect2 = 0;
 dead = false;
 deadpit = false;
+cooldown = false;
 
 
 fct_MoveH = function(iDirection)//deplacement horizontal
