@@ -33,7 +33,7 @@ DrawPoints2 = function(hexCol = c_aqua)//affichage mort
 				fAlpha)
 }
 
-DrawPoints3 = function(hexCol = c_aqua)//affichage mort
+DrawPoints3 = function(hexCol = c_aqua)//touches
 {
 	draw_set_font(Font1_1);
 	

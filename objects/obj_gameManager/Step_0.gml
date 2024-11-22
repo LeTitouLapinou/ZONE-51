@@ -1,4 +1,4 @@
-/// @description gestion de mort du joueur et de l'audio du jeu (ingame)
+/// @description gestion de mort du joueur et de l'audio du jeu (ingame) affichage
 // You can write your code in this editor
 bActive = true;
 
