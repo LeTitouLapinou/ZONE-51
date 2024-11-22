@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description affichage du dash
 // You can write your code in this editor
 vectx = obj_alien.vectorX 
 vecty = obj_alien.vectorY

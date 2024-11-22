@@ -60,8 +60,9 @@ fct_MoveH = function(iDirection)//deplacement horizontal
 
 fct_MoveV = function(iDirection)//deplacement vertical
 {
-		
-	if(!dead){
+	
+	if(!dead)
+	{
 		var lay_id = layer_get_id("Tiles_Walls");
 		var map_id = layer_tilemap_get_id(lay_id);
 		if(iDirection == -1)

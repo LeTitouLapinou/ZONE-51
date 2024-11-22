@@ -30,7 +30,6 @@ if(keyboard_check_released(vk_shift) && !dead)
 	}
 	else{alarm_set(0,1)}
 }
-if(!dead){
 	if(keyboard_check(vk_left))
 	{
 		//image_angleH = 180
@@ -49,7 +48,6 @@ if(!dead){
 		vect2 = [vectorX, vectorY]
 	}
 
-
 	if(keyboard_check(vk_down))
 	{
 		//image_angleV = 270
@@ -67,7 +65,7 @@ if(!dead){
 		vectorX = keyboard_check(vk_right) - keyboard_check(vk_left);
 		vect2 = [vectorX, vectorY]
 	}
-}
+
 
 fct_Angle();
 if(!keyboard_check(vk_anykey) && (gamepad_axis_value(0,gp_axislh)==0))//invisibilisation
@@ -235,6 +233,7 @@ if(dead == true)//mort
 	
 	if(image_index >= 11)
 	{
+		image_alpha = 0;
 		image_speed = 0;
 		image_index = 13;
 		show_debug_message(dead)

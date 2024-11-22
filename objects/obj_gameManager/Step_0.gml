@@ -1,5 +1,7 @@
-/// @description Insert description here
+/// @description gestion de mort du joueur
 // You can write your code in this editor
+bActive = true;
+show_debug_message(test)
 if(obj_alien.dead == true)
 {
 	bActive2 = true;
@@ -14,3 +16,4 @@ if(life <= 0)
 {
 	game_restart()
 }
+test ++
