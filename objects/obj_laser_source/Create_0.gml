@@ -16,7 +16,7 @@ if b_bleu //laser bleu
 image_index = default_sprite_index
 image_speed = 0
 
-fct_Destination = function()
+fct_Destination = function()//fonction de deplacement
 {
 	if vertical
 	{
