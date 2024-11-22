@@ -8,8 +8,9 @@ bActive2 = false;
 test = 0.1;
 audio_pause_sound(snd_ambient_music)
 
-DrawPoints = function(hexCol = c_aqua)//affichage nombre de  vie
+DrawPoints = function(hexCol = c_lime)//affichage nombre de  vie
 {
+	draw_set_font(Font1);
 	draw_text_color(x+room_width*0.1,y+room_height*0.1,$"VIE : {life}",
 				hexCol,
 				hexCol,
@@ -18,9 +19,11 @@ DrawPoints = function(hexCol = c_aqua)//affichage nombre de  vie
 				fAlpha)
 }
 
-DrawPoints2 = function(hexCol = c_silver)//affichage mort
+DrawPoints2 = function(hexCol = c_aqua)//affichage mort
 {
-	draw_text_color(x+room_width*0.5,y+room_height*0.5,$"press Enter to retry",
+	draw_set_font(Font1_1);
+	
+	draw_text_color(x+room_width*0.5,y+room_height*0.5,$"press 'Enter' to retry",
 				hexCol,
 				hexCol,
 				hexCol,

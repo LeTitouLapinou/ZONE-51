@@ -1,13 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var reset = keyboard_check(vk_space);
+
 if(!dead) // si pas mort : deplacement + dash ...
 {
 	if(!cooldown){
-		
-		
-		if(keyboard_check(vk_shift) && !dead)
+		if(keyboard_check(vk_shift) && !dead)//prep dash
 		{
 			
 			if(keyboard_check(vk_left)||keyboard_check(vk_right)||keyboard_check(vk_down)||keyboard_check(vk_down)){}
@@ -18,7 +16,7 @@ if(!dead) // si pas mort : deplacement + dash ...
 			if(instance_number(obj_dash)<=1){instance_create_layer(x,y,"Instances",obj_dash)}
 		}
 
-		if(keyboard_check_released(vk_shift) && !dead)
+		if(keyboard_check_released(vk_shift) && !dead)//dash avec sons
 		{
 			instance_destroy(obj_dash)
 			var lay_id = layer_get_id("Tiles_Walls");
@@ -33,8 +31,6 @@ if(!dead) // si pas mort : deplacement + dash ...
 				alarm_set(1,240)
 				dash = true;
 				alarm_set(0,5)
-				//x += lengthdir_x(50, image_angle);
-				//y += lengthdir_y(50, image_angle); 
 			}
 			else{alarm_set(0,1)}
 		}
@@ -167,7 +163,7 @@ if (keyboard_check_released(vk_up)  && init_slowdown3 == false){
 
 if ( init_slowdown3 )
 {
-		var lay_id = layer_get_id("Tiles_Walls");
+	var lay_id = layer_get_id("Tiles_Walls");
 	var map_id = layer_tilemap_get_id(lay_id);
 	var up_Left  = tilemap_get_at_pixel(map_id, bbox_left,  bbox_top -moveSpeed);
 	var up_Right = tilemap_get_at_pixel(map_id, bbox_right, bbox_top -moveSpeed);
@@ -249,5 +245,3 @@ if(dead == true)//mort
 	}
 }
 //Juste pour tester
-if (reset == 1)
-	game_restart()

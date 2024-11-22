@@ -54,6 +54,8 @@
   },
   "name":"ZONE 51",
   "resources":[
+    {"id":{"name":"Font1_1","path":"fonts/Font1_1/Font1_1.yy",},},
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"Documentation","path":"notes/Documentation/Documentation.yy",},},
     {"id":{"name":"crt","path":"objects/crt/crt.yy",},},
     {"id":{"name":"go_gym","path":"objects/go_gym/go_gym.yy",},},

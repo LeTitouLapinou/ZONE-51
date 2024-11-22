@@ -32,3 +32,11 @@ if(instance_exists(obj_spike))
 		audio_play_sound(snd_spike,10,false,0.5)
 	}
 }
+
+if(room == rm_ENDING_SCREEN)//entrer pour reset le jeu
+{
+	if(keyboard_check(vk_space))
+	{
+		game_restart();
+	}
+}

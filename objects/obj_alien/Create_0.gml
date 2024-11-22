@@ -51,12 +51,9 @@ fct_MoveH = function(iDirection)//deplacement horizontal
 				image_speed = lerp(image_speed,iVitesse,0.05)
 			}
 			else{ hspeed = 0
-				x -= 4*iDirection}
+				x -= 3*iDirection}
 		}
 	}
-		//x+= hspeed*iDirection
-		//if(iDirection==1){droite=true}else{if(iDirection==-1){gauche=true}}
-		
 }
 
 fct_MoveV = function(iDirection)//deplacement vertical
@@ -96,12 +93,9 @@ fct_MoveV = function(iDirection)//deplacement vertical
 				image_speed = lerp(image_speed,iVitesse,0.05)}
 			}
 			else{ vspeed = 0
-				y -= 4*iDirection}
+				y -= 3*iDirection}
 		}
-	}
-		//x+= hspeed*iDirection
-		//if(iDirection==1){droite=true}else{if(iDirection==-1){gauche=true}}
-		
+	}	
 }
 
 
