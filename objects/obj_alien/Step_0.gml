@@ -70,20 +70,24 @@ if(!dead){
 }
 
 fct_Angle();
-if(!keyboard_check(vk_anykey) && (gamepad_axis_value(0,gp_axislh)==0))
+if(!keyboard_check(vk_anykey) && (gamepad_axis_value(0,gp_axislh)==0))//invisibilisation
 {
 	image_index = 1;
 	image_speed = 0;
-	invisible = true;
+	inv = true;
 }
-else {invisible = false}
-if(invisible == true && !dead)
+else {inv = false}
+show_debug_message(invisible)
+if(inv == true && !dead)//invisible
 {
-	image_alpha -= 0.01
-	if(image_alpha <= 0.3){image_alpha=0.3}
+	
+	
+	image_alpha -= 0.02
+	if(image_alpha <= 0.3){image_alpha=0.3; invisible = true;}
 }
 else
 {
+	invisible = false;
 	image_alpha = 1
 }
 
@@ -209,9 +213,9 @@ if ( init_slowdown4 )
 
 }
 
-
 }
-if(deadpit == true)
+
+if(deadpit == true)//mort pit
 {
 			hspeed = 0; vspeed = 0;
 		image_xscale -= 0.01
@@ -219,7 +223,7 @@ if(deadpit == true)
 		if(image_xscale <= 0.1){dead = true; deadpit=false; image_speed = 1; }
 }
 
-if(dead == true)
+if(dead == true)//mort
 {
 	image_xscale = 1
 	image_yscale = 1
